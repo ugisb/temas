@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="http://s3.amazonaws.com/codecademy-content/courses/ltp2/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="{% static 'main.css' %}">
+
+
+	</head>
+	<body>
+		<b>Nejauši izvēlēti 1 min. gari fragmenti no XX gs. mūzikas vēstures tēmām<b>
+		<audio id="player"
+			preload="auto"
+			>
+			
+			<p>Your browser does not support the audio element</p>
+		</audio>
+
+
+
+		<div>
+			<input type ="image" src = "{% static 'again.jpg' %}" width="30" height="30" id = "again"/>
+			<input type ="image" src = "{% static 'play.png' %}" width="30" height="30" id = "play"/>
+			<input type ="image" src = "{% static 'forward.png' %}" width="30" height="30" id = "next"/>
+			<button id = "answer">Parādīt atbildi</button>
+		</div>
+
+		<b id = "atbilde" class = "hidden"></b>
+		<p class = "info">statuss: <span class="statuss"></span></p>
+		<img id = "pg" class = "hidden" src ="{% static 'play-grey.png' %}"/>
+		<img id = "pl" class = "hidden" src ="{% static 'play.png' %}"/>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="{% static 'app.js' %}"></script>
+	</body>
+</hmtl>

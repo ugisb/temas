@@ -1,0 +1,25 @@
+.hidden {
+	display: none;
+}
+
+#answer {
+	display: block;
+}
+
+.info {
+	font-style: italic;
+	color: gray;
+	top: 120px;
+	position:fixed
+}
+
+.sel {
+	border-style: solid;
+	border-color: #33CCFF;
+	border-width: 1px;
+}
+
+input {
+	outline: none;
+}
+
